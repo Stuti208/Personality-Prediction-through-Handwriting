@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image :linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(image.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width:100vw;
+}
+
+header {
+    font-size: 30px;
+    font-style: oblique;
+    color:coral;
+    text-align: center;
+    padding: 1em 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color:wheat;
+    max-width: 800px;
+    margin: -40px auto;
+    padding: -20px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+
+.identification-form {
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 300%;
+    height: 200%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#45a049;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1e7c22;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+footer {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

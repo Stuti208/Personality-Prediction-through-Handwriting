@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwriting Traits Prediction</title>
+</head>
+<body>
+    <h1>Handwriting Traits Prediction</h1>
+    
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+        <label for="file">Upload Handwriting Image:</label>
+        <input type="file" name="file" id="file" accept="image/*" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+      <h2>Predicted Trait: {{ prediction }}</h2>
+    {% endif %}
+
+    {% if image_file %}
+        <!-- <h2>Uploaded Image:</h2> -->
+        <img src="{{ url_for('static', filename=image_file) }}" alt="Uploaded Image" style="max-width: 300px;">
+    {% endif %}
+
+    <!-- <a href="/">Go Back</a> -->
+</body>
+</html>
